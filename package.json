@@ -1,0 +1,53 @@
+{
+  "name": "hyper-background",
+  "version": "1.0.0",
+  "description": "Change the background of your Hyper terminal (proof of concept).",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --progress",
+    "prepublish": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RSG-Group/hyper-background.git"
+  },
+  "keywords": [
+    "hyper",
+    "typescript",
+    "eslint"
+  ],
+  "author": "Ibrahim Ansari <ansari.ibrahim1@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/RSG-Group/hyper-background/issues"
+  },
+  "homepage": "https://github.com/RSG-Group/hyper-background#readme",
+  "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "@types/webpack": "^3.0.4",
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-typescript": "^0.3.0",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7",
+    "ts-loader": "^2.3.0",
+    "typescript": "^2.4.1",
+    "typescript-eslint-parser": "^4.0.0",
+    "webpack": "^3.3.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec)|(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}

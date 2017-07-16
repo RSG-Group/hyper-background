@@ -1,0 +1,10 @@
+{
+  "linters": {
+    "eslint": {
+      "args": [
+        "--ext",
+        ".js,.jsx,.ts,.tsx"
+      ]
+    }
+  }
+}
