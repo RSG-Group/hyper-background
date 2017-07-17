@@ -7,15 +7,10 @@ interface ExpectedConfig { // eslint-disable-line no-undef
 // Okay, enough TypeScript. Let's add that background image.
 exports.decorateConfig = (config: ExpectedConfig) => {
   // Duplicate the config instead of mutating the config passed as an argument.
-  const duplicateConfig = JSON.parse(JSON.stringify(config));
-  // Add our custom background CSS.
-  // If it isn't empty, then add to existing CSS.
-  if (config.css !== "") {
-    duplicateConfig.css += `\nbody { background: url(file://${config.backgroundImage}) center; }`;
-  } else {
-    // Else, reassign it to our own CSS.
-    duplicateConfig.css = `body { background: url(file://${config.backgroundImage}) center; }`;
-  }
+  const duplicateConfig = config;
+  /* Add our custom background CSS. Don't reassign CSS to avoid replacing any existing CSS.
+  We have added a newline for readability in case someone opens the inspector in Hyper. */
+  duplicateConfig.css += `\nbody { background: url(file://${config.backgroundImage}) center; }`;
   // Return our new config.
   return duplicateConfig;
 };

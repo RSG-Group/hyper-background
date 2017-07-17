@@ -1,9 +1,11 @@
 # hyper-background
 
+[![dependencies Status](https://david-dm.org/RSG-Group/hyper-background/status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background) [![devDependencies Status](https://david-dm.org/RSG-Group/hyper-background/dev-status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background?type=dev)
+
 Change the background of your Hyper terminal!
 
 NOTE: This is a proof of concept and doesn't have a lot of features other than changing the background (yet).
-More features can be expected to arrive soon.
+More features can be expected to arrive soon, as I wish to make this more large scale.
 
 ## Installation
 
@@ -25,13 +27,13 @@ hpm install hyper-background
 
 In your `.hyper.js` file, which probably looks something like this at this point:
 
-```json
+```javascript
 module.exports = {
   config: {
     // font stuff
     fontSize: 14,
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    // curose stuff
+    // cursor stuff
     cursorColor: '#EBCB8B',
     cursorShape: 'BLOCK',
     cursorBlink: true,
@@ -65,7 +67,7 @@ module.exports = {
 
 You will need to add the path to your selected background in the `config` object as `backgroundImage` after which your `.hyper.js` should look like:
 
-```json
+```javascript
 module.exports = {
   config: {
     // font stuff
