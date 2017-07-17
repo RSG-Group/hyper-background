@@ -2,10 +2,12 @@
 
 [![dependencies Status](https://david-dm.org/RSG-Group/hyper-background/status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background) [![devDependencies Status](https://david-dm.org/RSG-Group/hyper-background/dev-status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background?type=dev)
 
-Change the background of your Hyper terminal!
+:milky_way: Change the background of your Hyper terminal! Technically the only plugin and the only easy way to do this :stuck_out_tongue_closed_eyes:
 
-NOTE: This is a proof of concept and doesn't have a lot of features other than changing the background (yet).
-More features can be expected to arrive soon, as I wish to make this more large scale.
+Fun fact: `hyper-background` was boilerplated and written in 2 hours. And it worked perfectly the first time.
+
+NOTE: This is a proof of concept right now and doesn't have a lot of features other than changing the background (yet).
+More features can be expected to arrive soon, as I wish to make this better.
 
 ## Installation
 
@@ -109,5 +111,3 @@ module.exports = {
 ```
 
 After this, you should have your background image ready to go!
-
-***NOTE: You must specify an absolute path, not a relative path. This will soon be resolved.***
