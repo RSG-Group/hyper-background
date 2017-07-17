@@ -14,11 +14,9 @@ exports.decorateConfig = (config: ExpectedConfig) => {
 
   // Check if config.backgroundImage is absolute, else resolve it.
   let backgroundImage; // Which will soon be the absolute path to the image.
-  // If path is relative to home directory of user, then continue.
-  if (config.backgroundImage.split("")[0] === "~") backgroundImage = config.backgroundImage;
   // If path is absolute, then continue.
-  else if (isAbsolute(config.backgroundImage)) backgroundImage = config.backgroundImage;
-  // If path is not absolute or relative to home directly, resolve, assign and then continue.
+  if (isAbsolute(config.backgroundImage)) backgroundImage = config.backgroundImage;
+  // If path is not absolute then, resolve, assign and then continue.
   else backgroundImage = resolve(config.backgroundImage);
 
   /* Add our custom background CSS. Don't reassign CSS to avoid replacing any existing CSS.
