@@ -113,6 +113,6 @@ module.exports = {
 After this, you should have your background image ready to go!
 
 ## Development
-***A minimum of Node 6 is recommended.***
+***A recommended minimum Node version of Node 7 is required. Node 6 is an absolute minimum and will work, but we are not targeting it as Hyper uses Node 7.4 internally.***
 - Tests can be run via `npm test`
 - You can bundle the plugin via `npm run build`
