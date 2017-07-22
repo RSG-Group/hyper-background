@@ -2,16 +2,16 @@
 
 [![dependencies Status](https://david-dm.org/RSG-Group/hyper-background/status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background) [![devDependencies Status](https://david-dm.org/RSG-Group/hyper-background/dev-status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background?type=dev)
 
-:milky_way: Change the background of your Hyper terminal! Technically the only plugin and the only easy way to do this :stuck_out_tongue_closed_eyes:
+:milky_way: Change the background of your Hyper terminal! Technically the first plugin and the only easy way to do this :stuck_out_tongue_closed_eyes:
 
 Fun fact: `hyper-background` was boilerplated and written in 2 hours. And it worked perfectly the first time.
 
 NOTE: This is a proof of concept right now and doesn't have a lot of features other than changing the background (yet).
 More features can be expected to arrive soon, as I wish to make this better.
 
-## Installation
+***Supports Windows, macOS and Linux. [If you have any issues, report them at the repository's issue tracker.](https://github.com/RSG-Group/hyper-background/issues)***
 
-***Windows currently unsupported. Only a matter of time until I get to it because hey, this was written in 30 minutes or something.***
+## Installation
 
 ### Manually
 
@@ -111,3 +111,8 @@ module.exports = {
 ```
 
 After this, you should have your background image ready to go!
+
+## Development
+***A minimum of Node 6 is recommended.***
+- Tests can be run via `npm test`
+- You can bundle the plugin via `npm run build`

@@ -58,5 +58,4 @@ typings/
 .env
 
 # Our compiled code.
-index.js
-index.js.map
+lib/

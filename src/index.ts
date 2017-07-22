@@ -1,5 +1,5 @@
 // Import path if we need to resolve relative paths.
-const { resolve, isAbsolute } = require("path");
+import { resolve, isAbsolute } from "path";
 
 // Type out how we expect our configuration recieved to be ¯\_(ツ)_/¯
 interface ExpectedConfig { // eslint-disable-line no-undef

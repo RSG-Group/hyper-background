@@ -2,6 +2,8 @@
 
 "use strict";
 
+const path = require("path");
+
 module.exports = {
   target: "electron-renderer",
   entry: {
@@ -9,7 +11,7 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
-    path: `${__dirname}`,
+    path: path.join(__dirname, "lib"),
     sourceMapFilename: "[file].map",
     library: "hyper-background",
     libraryTarget: "umd",

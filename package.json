@@ -1,8 +1,8 @@
 {
   "name": "hyper-background",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Change the background of your Hyper terminal (proof of concept).",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "tsc && ava",
     "build": "webpack --progress",
@@ -37,8 +37,7 @@
     "webpack": "^3.3.0"
   },
   "ava": {
-    "babel": {
-      "presets": ["stage-0", "@ava/stage-4"]
-    }
+    "babel": "inherit",
+    "require": ["babel-register"]
   }
 }
