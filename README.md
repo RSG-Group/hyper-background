@@ -2,12 +2,12 @@
 
 [![dependencies Status](https://david-dm.org/RSG-Group/hyper-background/status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background) [![devDependencies Status](https://david-dm.org/RSG-Group/hyper-background/dev-status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background?type=dev)
 
-:milky_way: Change the background of your Hyper terminal! Technically the first plugin and the only easy way to do this :stuck_out_tongue_closed_eyes:
+:milky_way: Change the background of your Hyper terminal! Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes:
 
-Fun fact: `hyper-background` was boilerplated and written in 2 hours. And it worked perfectly the first time.
+Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked perfectly the first time.
 
 NOTE: This is a proof of concept right now and doesn't have a lot of features other than changing the background (yet).
-More features can be expected to arrive soon, as I wish to make this better.
+We expect more features to arrive soon, as I wish to make this better.
 
 ***Supports Windows, macOS and Linux. [If you have any issues, report them at the repository's issue tracker.](https://github.com/RSG-Group/hyper-background/issues)***
 
@@ -32,32 +32,32 @@ In your `.hyper.js` file, which probably looks something like this at this point
 ```javascript
 module.exports = {
   config: {
-    // font stuff
+    // font config
     fontSize: 14,
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    // cursor stuff
+    // cursor config
     cursorColor: '#EBCB8B',
     cursorShape: 'BLOCK',
     cursorBlink: true,
-    // color stuff
+    // color config
     foregroundColor: '#fff',
     backgroundColor: '#000',
     borderColor: '#333',
-    // It doesn't matter if your CSS property is populated, hyper-background can handle this.
+    // hyper-background can handle any value of the CSS key, whether populated manually or populated by a plugin, and will not overwrite it.
     css: '',
     termCSS: '',
-    // window and color stuff
+    // window and color config
     showHamburgerMenu: true,
     showWindowControls: '',
     padding: '12px 14px',
     colors: {
       ...
     },
-    // shell stuff
+    // shell config
     shell: '/bin/bash',
     shellArgs: ['--login'],
     env: {},
-    // behaviour stuff
+    // behaviour config
     bell: false,
     copyOnSelect: false,
   },
@@ -72,32 +72,32 @@ You will need to add the path to your selected background in the `config` object
 ```javascript
 module.exports = {
   config: {
-    // font stuff
+    // font config
     fontSize: 14,
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    // cursor stuff
+    // cursor config
     cursorColor: '#EBCB8B',
     cursorShape: 'BLOCK',
     cursorBlink: true,
-    // color stuff
+    // color config
     foregroundColor: '#fff',
     backgroundColor: '#000',
     borderColor: '#333',
-    // css stuff
+    // css config
     css: '',
     termCSS: '',
-    // window and color stuff
+    // window and color config
     showHamburgerMenu: true,
     showWindowControls: '',
     padding: '12px 14px',
     colors: {
       ...
     },
-    // shell stuff
+    // shell config
     shell: '/bin/zsh',
     shellArgs: ['--login'],
     env: {},
-    // behaviour stuff
+    // behaviour config
     bell: false,
     copyOnSelect: false,
 
@@ -113,6 +113,8 @@ module.exports = {
 After this, you should have your background image ready to go!
 
 ## Development
-***A recommended minimum Node version of Node 7 is required. Node 6 is an absolute minimum and will work, but we are not targeting it as Hyper uses Node 7.4 internally.***
-- Tests can be run via `npm test`
+
+***The recommended Node version required in development is Node 8. while the target Node version is 7. Node 6 is the absolute necessity and will work, but we are not targeting it as Hyper uses Node 7.4 internally.***
+
+- Run tests via `npm test`
 - You can bundle the plugin via `npm run build`
