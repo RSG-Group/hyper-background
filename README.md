@@ -114,7 +114,7 @@ After this, you should have your background image ready to go!
 
 ## Development
 
-***The recommended Node version required in development is Node 8. while the target Node version is 7. Node 6 is the absolute necessity and will work, but we are not targeting it as Hyper uses Node 7.4 internally.***
+***The recommended Node version required in development is Node 8. while the target Node version is 7. Node 6 is the minimum version required.***
 
 - Run tests via `npm test`
 - You can bundle the plugin via `npm run build`
