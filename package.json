@@ -1,6 +1,6 @@
 {
   "name": "hyper-background",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Change the background of your Hyper terminal (proof of concept).",
   "main": "lib/index.js",
   "scripts": {
@@ -38,6 +38,8 @@
   },
   "ava": {
     "babel": "inherit",
-    "require": ["babel-register"]
+    "require": [
+      "babel-register"
+    ]
   }
 }
