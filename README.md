@@ -1,13 +1,14 @@
 # hyper-background
 
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
+
 [![dependencies Status](https://david-dm.org/RSG-Group/hyper-background/status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background) [![devDependencies Status](https://david-dm.org/RSG-Group/hyper-background/dev-status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background?type=dev)
 
 :milky_way: Change the background of your Hyper terminal! Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes:
 
-Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked perfectly the first time.
+Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked the first time.
 
-NOTE: This is a proof of concept right now and doesn't have a lot of features other than changing the background (yet).
-We expect more features to arrive soon, as I wish to make this better.
+NOTE: This plugin is small, which might cause it to seem unmaintained. If you see the plugin seem so, I assure you that this plugin is actively maintained and if you wish to propose a new feature, report an issue or you are submitting a PR, do not hesitate to do so under grounds of umaintainence.
 
 ***Supports Windows, macOS and Linux. [If you have any issues, report them at the repository's issue tracker.](https://github.com/RSG-Group/hyper-background/issues)***
 
@@ -114,7 +115,7 @@ After this, you should have your background image ready to go!
 
 ## Development
 
-***The recommended Node version required in development is Node 8. while the target Node version is 7. Node 6 is the minimum version required.***
+***The recommended Node version required in development is Node 8. while the target Node version is 7. Node 6 is the absolute necessity and will work, but we are not targeting it as Hyper uses Node 7.4 internally.***
 
 - Run tests via `npm test`
 - You can bundle the plugin via `npm run build`

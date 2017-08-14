@@ -24,3 +24,8 @@ Initial release which supports the current API which will not change for the for
 
 - Set new target to ES2016 from ES2015 (does not affect Node 6 support as this plugin doesn't use the exponentiation operator).
 - Update README.
+
+## 1.3.1 (14th August 2017)
+
+- Switch to the Standard code style.
+- Update packages and remove the proof of concept label.

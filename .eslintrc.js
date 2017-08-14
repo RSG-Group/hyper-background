@@ -3,22 +3,10 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: "airbnb-base",
+  extends: "standard",
   parser: "typescript-eslint-parser",
-  parserOptions: {
-    sourceType: "module"
-  },
-  plugins: [
-    "typescript"
-  ],
+  plugins: ["typescript"],
   rules: {
-    // Style guide.
-    indent: ["error", 2],
-    "linebreak-style": ["error", "windows"],
-    quotes: ["error", "double"],
-    semi: ["error", "always"],
-    "no-unused-vars": ["error", { vars: "local", args: "after-used" }],
-    strict: "off",
     // TypeScript styling.
     "typescript/no-explicit-any": ["error"],
     "typescript/type-annotation-spacing": ["error"],
