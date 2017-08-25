@@ -26,6 +26,3 @@ exports.decorateConfig = (config: ExpectedConfig) => {
   // Return our new config.
   return duplicateConfig
 }
-
-// Export our `exports` for testing because ¯\_(ツ)_/¯
-module.exports = exports
