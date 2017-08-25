@@ -29,3 +29,7 @@ Initial release which supports the current API which will not change for the for
 
 - Switch to the Standard code style.
 - Update packages and remove the proof of concept label.
+
+## 1.3.2 (25th August 2017)
+
+- Fix corrupted 1.3.1 release.
