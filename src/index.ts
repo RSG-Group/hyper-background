@@ -8,7 +8,7 @@ interface ExpectedConfig { // eslint-disable-line no-undef
 }
 
 // Okay, enough TypeScript. Let's add that background image.
-exports.decorateConfig = (config: ExpectedConfig) => {
+export const decorateConfig = (config: ExpectedConfig) => {
   // Duplicate the config instead of mutating the config passed as an argument.
   const duplicateConfig = config
 

@@ -38,3 +38,9 @@ Initial release which supports the current API which will not change for the for
 
 - Get hyper-background working again.
 - Sincerely apologizing for the trouble caused to you people.
+
+## 1.5.0 (27th August 2017)
+
+- Tracked down the bug to Webpack, the plugin should work properly.
+- Abstracting something too much isn't good, lesson learned.
+- Period of non-functionality is from 14th August to 27th August, today it's up and running.

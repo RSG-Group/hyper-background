@@ -2,7 +2,7 @@
 // Import Ava.
 import test from 'ava'
 // Import index.ts for testing.
-import plugin from './lib/index'
+import { decorateConfig } from './lib'
 
 // It should decorate config properly when empty CSS is passed.
 test('it returns expected configuration on empty CSS', (t) => {
@@ -12,7 +12,7 @@ test('it returns expected configuration on empty CSS', (t) => {
     css: ''
   }
   // Save the config we recieved.
-  const recievedConfig = plugin.decorateConfig(configSent)
+  const recievedConfig = decorateConfig(configSent)
   // We expect this config to be recieved.
   const expectedConfig = {
     backgroundImage: '/exampleImageWeWontResolve.png',
@@ -32,7 +32,7 @@ test('it returns expected configuration on empty CSS', (t) => {
     css: 'body { background: url(file:///exampleImageWeWontResolve.png) center; }'
   }
   // Save the config we recieved.
-  const recievedConfig = plugin.decorateConfig(configSent)
+  const recievedConfig = decorateConfig(configSent)
   // We expect this config to be recieved.
   const expectedConfig = {
     backgroundImage: '/exampleImageWeWontResolve.png',
