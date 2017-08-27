@@ -2,7 +2,7 @@
 // Import Ava.
 import test from 'ava'
 // Import index.ts for testing.
-import { decorateConfig } from './lib'
+import { decorateConfig } from './lib/index'
 
 // It should decorate config properly when empty CSS is passed.
 test('it returns expected configuration on empty CSS', (t) => {

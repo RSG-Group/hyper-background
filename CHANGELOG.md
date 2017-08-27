@@ -44,3 +44,7 @@ Initial release which supports the current API which will not change for the for
 - Tracked down the bug to Webpack, the plugin should work properly.
 - Abstracting something too much isn't good, lesson learned.
 - Period of non-functionality is from 14th August to 27th August, today it's up and running.
+
+## 1.5.1 (27th August 2017)
+
+- Meet guidelines for addition in bnb/awesome-hyper list. :smile:

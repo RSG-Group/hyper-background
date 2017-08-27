@@ -1,10 +1,12 @@
 # hyper-background
 
+:milky_way: Change the background of your hyper terminal!
+
 [![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
 [![dependencies Status](https://david-dm.org/RSG-Group/hyper-background/status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background) [![devDependencies Status](https://david-dm.org/RSG-Group/hyper-background/dev-status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background?type=dev)
 
-:milky_way: Change the background of your Hyper terminal! Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes:
+Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes:
 
 Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked the first time.
 
@@ -25,6 +27,10 @@ If you have hpm-cli installed, run
 ```zsh
 hpm install hyper-background
 ```
+
+## Example of a customized terminal
+
+[![Screenshot_from_2017-08-07_13-50-38.png](https://s2.postimg.org/z9rr6oj8p/Screenshot_from_2017-08-07_13-50-38.png)](https://postimg.org/image/s6jvr2dt1/)
 
 ## Usage
 
