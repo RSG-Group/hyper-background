@@ -6,9 +6,9 @@
 
 [![dependencies Status](https://david-dm.org/RSG-Group/hyper-background/status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background) [![devDependencies Status](https://david-dm.org/RSG-Group/hyper-background/dev-status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background?type=dev)
 
-Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes:
+Tip: Make hyper-background the first plugin in your plugins list for optimal performance (it won't disrupt the speed of other plugins due to its performant and small size).
 
-Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked the first time.
+Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes: Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked the first time.
 
 NOTE: This plugin is small, which might cause it to seem unmaintained. If you see the plugin seem so, I assure you that this plugin is actively maintained and if you wish to propose a new feature, report an issue or you are submitting a PR, do not hesitate to do so under grounds of umaintainence.
 
@@ -18,7 +18,7 @@ NOTE: This plugin is small, which might cause it to seem unmaintained. If you se
 
 ### Manually
 
-Edit `.hyper.js` and add `"hyper-background"` to the `plugins` array which should be near the end of your file.
+Edit `.hyper.js` and add `"hyper-background"` to the `plugins` array in the beginning (preferably) which should be near the end of your file.
 
 ### Using hpm-cli
 
