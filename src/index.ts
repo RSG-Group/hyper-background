@@ -6,6 +6,7 @@ import { resolve, isAbsolute } from 'path'
 interface ExpectedConfig {
   backgroundImage: string;
   css: string;
+  backgroundColor: string;
 } /* eslint-enable no-undef */
 
 // Okay, enough TypeScript. Let's add that background image.
@@ -19,7 +20,8 @@ export const decorateConfig = (config: ExpectedConfig) => {
 
   /* Add our custom background CSS. Don't reassign CSS to avoid replacing any existing CSS.
   We have added a newline for readability in case someone opens the inspector in Hyper. */
-  config.css += `\nbody { background: url(file://${backgroundImage}) center; }`
+  config.css += `.terms_terms { background: url(file://${backgroundImage}) center; background-size: cover; } .header_header { background: black }`
+  config.backgroundColor = 'transparent'
 
   // Return our mutated config.
   return config
