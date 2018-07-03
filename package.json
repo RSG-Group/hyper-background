@@ -1,6 +1,6 @@
 {
   "name": "hyper-background",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Change the background of your Hyper terminal!",
   "main": "lib/index.js",
   "scripts": {
