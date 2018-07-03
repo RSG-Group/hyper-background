@@ -1,28 +1,28 @@
 // Import path if we need to resolve relative paths.
 import { resolve, isAbsolute } from 'path'
 
-// Type out how we expect our configuration recieved to be ¯\_(ツ)_/¯
-/* eslint-disable no-undef */
-interface ExpectedConfig {
-  backgroundImage: string;
-  css: string;
-  backgroundColor: string;
-} /* eslint-enable no-undef */
-
-// Okay, enough TypeScript. Let's add that background image.
-export const decorateConfig = (config: ExpectedConfig) => {
-  // Check if config.backgroundImage is absolute, else resolve it.
-  let backgroundImage // Which will soon be the absolute path to the image.
-  // If path is absolute, then continue.
-  if (isAbsolute(config.backgroundImage)) backgroundImage = config.backgroundImage
-  // If path is not absolute then, resolve, assign and then continue.
-  else backgroundImage = resolve(config.backgroundImage)
-
-  /* Add our custom background CSS. Don't reassign CSS to avoid replacing any existing CSS.
-  We have added a newline for readability in case someone opens the inspector in Hyper. */
-  config.css += `.terms_terms { background: url(file://${backgroundImage}) center; background-size: cover; } .header_header { background: black }`
-  config.backgroundColor = 'transparent'
-
-  // Return our mutated config.
-  return config
+// Let's add that background image.
+exports.decorateConfig = (
+  config: { backgroundImage: string, css: string, backgroundColor: string }
+) => {
+  // Check if the background path is absolute.
+  const backgroundPath = isAbsolute(config.backgroundImage)
+    // If it is absolute, then set it to the value, else resolve it correctly.
+    ? config.backgroundImage : resolve(__dirname, '../../..', config.backgroundImage)
+  // Assign the old config and our customizations to a new object and return it.
+  return Object.assign({}, config, {
+    // This makes the terminal transparent.
+    backgroundColor: 'transparent',
+    // Add our custom background CSS. Don't reassign CSS to avoid replacing any existing CSS.
+    css: `
+      ${config.css || ''}
+      .hyper_main {
+        background: url(file://${backgroundPath}) center;
+        background-size: cover;
+      }
+      .terms_terms {
+        background-color: transparent;
+      }
+    `
+  })
 }

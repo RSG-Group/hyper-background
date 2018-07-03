@@ -16,16 +16,24 @@ test('it returns expected configuration on empty CSS', (t) => {
   // We expect this config to be recieved.
   const expectedConfig = {
     backgroundImage: '/exampleImageWeWontResolve.png',
-    // We expect a newline as index.js was slightly optimized after speed complaints (from me).
-    // This will have no issues on the plugin's operation.
-    css: '\nbody { background: url(file:///exampleImageWeWontResolve.png) center; }'
+    backgroundColor: 'transparent',
+    css: `
+      
+      .hyper_main {
+        background: url(file:///exampleImageWeWontResolve.png) center;
+        background-size: cover;
+      }
+      .terms_terms {
+        background-color: transparent;
+      }
+    `
   }
   // We expect that..
   t.deepEqual(recievedConfig, expectedConfig)
 })
 
 // It should decorate config properly when some CSS is passed.
-test('it returns expected configuration on empty CSS', (t) => {
+test('it returns expected configuration with some custom CSS', (t) => {
   // Declare the config we must send for reference.
   const configSent = {
     backgroundImage: '/exampleImageWeWontResolve.png',
@@ -36,7 +44,17 @@ test('it returns expected configuration on empty CSS', (t) => {
   // We expect this config to be recieved.
   const expectedConfig = {
     backgroundImage: '/exampleImageWeWontResolve.png',
-    css: 'body { background: url(file:///exampleImageWeWontResolve.png) center; }\nbody { background: url(file:///exampleImageWeWontResolve.png) center; }'
+    backgroundColor: 'transparent',
+    css: `
+      body { background: url(file:///exampleImageWeWontResolve.png) center; }
+      .hyper_main {
+        background: url(file:///exampleImageWeWontResolve.png) center;
+        background-size: cover;
+      }
+      .terms_terms {
+        background-color: transparent;
+      }
+    `
   }
   // We expect that..
   t.deepEqual(recievedConfig, expectedConfig)

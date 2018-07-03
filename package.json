@@ -7,7 +7,7 @@
     "test": "tsc && ava",
     "build": "tsc",
     "prepublish": "tsc",
-    "lint": "eslint . --ext .ts,.js"
+    "lint": "eslint . --ext .ts,.js && tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -25,24 +25,17 @@
   },
   "homepage": "https://github.com/RSG-Group/hyper-background#readme",
   "devDependencies": {
-    "@types/node": "^8.0.25",
-    "ava": "^0.21.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^4.4.1",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-typescript": "^0.5.0",
-    "typescript": "^2.4.2",
-    "typescript-eslint-parser": "^5.0.1"
-  },
-  "ava": {
-    "babel": "inherit",
-    "require": [
-      "babel-register"
-    ]
+    "@types/node": "^10.5.1",
+    "ava": "^1.0.0-beta.6",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-typescript": "^0.12.0",
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^16.0.1"
   },
   "eslintIgnore": [
     "lib/"

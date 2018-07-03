@@ -10,7 +10,7 @@ Tip: Make hyper-background the first plugin in your plugins list for optimal per
 
 Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes: Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked the first time.
 
-NOTE: This plugin is small, which might cause it to seem unmaintained. If you see the plugin seem so, I assure you that this plugin is actively maintained and if you wish to propose a new feature, report an issue or you are submitting a PR, do not hesitate to do so under grounds of umaintainence.
+NOTE: This plugin is small, which might cause it to seem unmaintained. If you see the plugin seem so, I assure you that this plugin is actively maintained and if you wish to propose a new feature, report an issue or you are submitting a PR, do not hesitate to do so under grounds of umaintainence. If you face issues, read the FAQ.
 
 ***Supports Windows, macOS and Linux. [If you have any issues, report them at the repository's issue tracker.](https://github.com/RSG-Group/hyper-background/issues)***
 
@@ -27,6 +27,20 @@ If you have hpm-cli installed, run
 ```zsh
 hpm install hyper-background
 ```
+
+## FAQ
+
+**How should I specify the path?**
+
+Either you can provide an absolute path such as `/path/to/image.png` or a relative path from your home directory which hyper-background will resolve automatically.
+
+**Does this support Hyper 2?**
+
+Yep, this plugin supports Hyper 2.x.
+
+**What about a slideshow feature?**
+
+This feature is in the works and coming soon.
 
 ## Example of a customized terminal
 
@@ -121,7 +135,7 @@ After this, you should have your background image ready to go!
 
 ## Development
 
-***The recommended Node version required in development is Node 8. while the target Node version is 7. Node 6 is the absolute necessity and will work, but we are not targeting it as Hyper uses Node 7.4 internally.***
+***The recommended Node version required in development is Node 8+. while the target Node version is 7. Node 6 is the absolute necessity and will work, but we are not targeting it as Hyper uses Node 7.4 internally.***
 
 - Run tests via `npm test`
 - You can bundle the plugin via `npm run build`
