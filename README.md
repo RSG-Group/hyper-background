@@ -44,7 +44,7 @@ This feature is in the works and coming soon.
 
 ## Example of a customized terminal
 
-[![Screenshot_from_2017-08-07_13-50-38.png](https://s2.postimg.org/z9rr6oj8p/Screenshot_from_2017-08-07_13-50-38.png)](https://postimg.org/image/s6jvr2dt1/)
+[![Screenshot_from_2017-08-07_13-50-38.png](https://i.postimg.cc/KzkVL4LS/Screenshot-from-2017-08-07-13-50-38.png)](https://postimg.cc/1nSJ1mJJ)
 
 ## Usage
 
