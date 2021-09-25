@@ -2,7 +2,7 @@
 // Import Ava.
 const test = require('ava')
 // Import index.ts for testing.
-const { decorateConfig } = require('./lib/index')
+const { decorateConfig } = require('./index')
 
 // It should decorate config properly when empty CSS is passed.
 test('it returns expected configuration on empty CSS', (t) => {

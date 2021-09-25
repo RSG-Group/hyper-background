@@ -1,6 +1,3 @@
-# Ignore lib/
-lib/
-
 .yarn/*
 !.yarn/patches
 !.yarn/releases

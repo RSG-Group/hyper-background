@@ -4,8 +4,6 @@
 
 [![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
-[![dependencies Status](https://david-dm.org/RSG-Group/hyper-background/status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background) [![devDependencies Status](https://david-dm.org/RSG-Group/hyper-background/dev-status.svg?style=flat-square)](https://david-dm.org/RSG-Group/hyper-background?type=dev)
-
 Tip: Make hyper-background the first plugin in your plugins list for optimal performance (it won't disrupt the speed of other plugins due to its performant and small size).
 
 Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes: Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked the first time.
@@ -15,6 +13,14 @@ NOTE: This plugin is small, which might cause it to seem unmaintained. If you se
 ***Supports Windows, macOS and Linux. [If you have any issues, report them at the repository's issue tracker.](https://github.com/RSG-Group/hyper-background/issues)***
 
 ## Installation
+
+### Using hyper's CLI
+
+Run the following command in your Hyper terminal:
+
+```zsh
+hyper i hyper-background
+```
 
 ### Manually
 
@@ -135,7 +141,7 @@ After this, you should have your background image ready to go!
 
 ## Development
 
-***The recommended Node version required in development is Node 8+. while the target Node version is 7. Node 6 is the absolute necessity and will work, but we are not targeting it as Hyper uses Node 7.4 internally.***
+***The recommended Node version required in development is Node 12+ at the time of writing. This is likely out of date when you read this, so use the latest version of Node.js available. The plugin itself works on versions as old as Node.js 6, but this is irrelevant.***
 
-- Run tests via `npm test`
-- You can bundle the plugin via `npm run build`
+- Run tests via `yarn test`
+- You can bundle the plugin via `yarn build`
