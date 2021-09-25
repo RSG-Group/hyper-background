@@ -3,17 +3,20 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: "standard",
-  parser: "typescript-eslint-parser",
-  plugins: ["typescript"],
+  extends: 'standard-with-typescript',
+  plugins: ['@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json'
+  },
+  ignorePatterns: ['.eslintrc.js', 'lib'],
   rules: {
-    // TypeScript styling.
-    "typescript/no-explicit-any": ["error"],
-    "typescript/type-annotation-spacing": ["error"],
-    "typescript/no-namespace": ["error"],
-    "typescript/interface-name-prefix": ["error"],
-    "typescript/no-angle-bracket-type-assertion": ["error"],
-    // Disable erroring rule.
-    "import/no-unresolved": "off"
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/triple-slash-reference': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/prefer-optional-chain': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'off'
   }
-};
+}

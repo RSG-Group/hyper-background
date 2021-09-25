@@ -9,7 +9,8 @@ exports.decorateConfig = (
   // Check if the background path is absolute.
   const backgroundPath = isAbsolute(config.backgroundImage)
     // If it is absolute, then set it to the value, else resolve it correctly.
-    ? config.backgroundImage : resolve(homedir(), config.backgroundImage)
+    ? config.backgroundImage
+    : resolve(homedir(), config.backgroundImage)
   // Assign the old config and our customizations to a new object and return it.
   return Object.assign({}, config, {
     // This makes the terminal transparent.

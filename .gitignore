@@ -1,11 +1,19 @@
+# Ignore lib/
+lib/
+
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
 # Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Ignore lib/
-lib/
 
 # Runtime data
 pids
