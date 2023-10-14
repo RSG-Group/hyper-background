@@ -8,7 +8,7 @@ Tip: Make hyper-background the first plugin in your plugins list for optimal per
 
 Technically the first plugin and the whole and sole easy way to do this :stuck_out_tongue_closed_eyes: Fun fact: We boilerplated and wrote `hyper-background` in 2 hours. And it worked the first time.
 
-NOTE: This plugin is small, which might cause it to seem unmaintained. If you see the plugin seem so, I assure you that this plugin is actively maintained and if you wish to propose a new feature, report an issue or you are submitting a PR, do not hesitate to do so under grounds of umaintainence. If you face issues, read the FAQ.
+NOTE: This plugin is small, which might cause it to seem unmaintained. If you see the plugin seem so, I assure you that this plugin is actively maintained and if you wish to propose a new feature, report an issue or you are submitting a PR, don't hesitate to do so. If you face issues, read the FAQ.
 
 ***Supports Windows, macOS and Linux. [If you have any issues, report them at the repository's issue tracker.](https://github.com/RSG-Group/hyper-background/issues)***
 
@@ -40,13 +40,9 @@ hpm install hyper-background
 
 Either you can provide an absolute path such as `/path/to/image.png` or a relative path from your home directory which hyper-background will resolve automatically.
 
-**Does this support Hyper 2?**
+**Does this support Hyper 2 and newer versions?**
 
-Yep, this plugin supports Hyper 2.x.
-
-**What about a slideshow feature?**
-
-This feature is in the works and coming soon.
+Yep. If you're still on Hyper 1.x or older for some reason (???), use version 1.5.1 of this plugin.
 
 ## Example of a customized terminal
 
@@ -54,7 +50,7 @@ This feature is in the works and coming soon.
 
 ## Usage
 
-In your `.hyper.js` file, which probably looks something like this at this point:
+In your `.hyper.js` file, which probably looks something like this at this point (note that Hyper v4+ will use JSON files for configuration instead of JS):
 
 ```javascript
 module.exports = {
