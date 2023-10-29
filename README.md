@@ -24,7 +24,7 @@ hyper i hyper-background
 
 ### Manually
 
-Edit `.hyper.js` and add `"hyper-background"` to the `plugins` array in the beginning (preferably) which should be near the end of your file.
+Edit `.hyper.js` and add `"hyper-background"` to the `plugins` array (located near the end of your file), preferably at the start of the array, but after any theme plugins.
 
 ### Using hpm-cli
 
