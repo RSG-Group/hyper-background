@@ -137,7 +137,7 @@ After this, you should have your background image ready to go!
 
 ## Development
 
-***The recommended Node version required in development is Node 12+ at the time of writing. This is likely out of date when you read this, so use the latest version of Node.js available. The plugin itself works on versions as old as Node.js 6, but this is irrelevant.***
+***The recommended Node version required in development is Node 18+ at the time of writing. This is likely out of date when you read this, so use the latest version of Node.js available. The plugin itself works on versions as old as Node.js 6, but this is irrelevant.***
 
 - Run tests via `yarn test`
 - You can bundle the plugin via `yarn build`

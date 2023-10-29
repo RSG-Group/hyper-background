@@ -4,7 +4,7 @@
   "description": "Change the background of your Hyper terminal!",
   "main": "index.js",
   "scripts": {
-    "test": "ava",
+    "test": "node --test",
     "lint": "eslint .",
     "prepublish": "yarn lint && yarn test"
   },
@@ -22,10 +22,9 @@
     "url": "https://github.com/RSG-Group/hyper-background/issues"
   },
   "homepage": "https://github.com/RSG-Group/hyper-background#readme",
-  "packageManager": "yarn@4.0.0-rc.53",
+  "packageManager": "yarn@4.0.1",
   "devDependencies": {
     "@types/node": "^20.8.6",
-    "ava": "^5.3.1",
     "eslint": "^8.51.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",

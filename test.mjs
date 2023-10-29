@@ -1,11 +1,11 @@
-/* eslint-env ava */
-// Import Ava.
-const test = require('ava')
-// Import index.ts for testing.
-const { decorateConfig } = require('./index')
+import assert from 'node:assert'
+import test from 'node:test'
+import plugin from './index.js'
+
+const { decorateConfig } = plugin
 
 // It should decorate config properly when empty CSS is passed.
-test('it returns expected configuration on empty CSS', (t) => {
+test('it returns expected configuration on empty CSS', t => {
   // Declare the config we must send for reference.
   const configSent = {
     backgroundImage: '/exampleImageWeWontResolve.png',
@@ -29,7 +29,7 @@ test('it returns expected configuration on empty CSS', (t) => {
     `
   }
   // We expect that..
-  t.deepEqual(recievedConfig, expectedConfig)
+  assert.deepEqual(recievedConfig, expectedConfig)
 })
 
 // It should decorate config properly when some CSS is passed.
@@ -57,5 +57,5 @@ test('it returns expected configuration with some custom CSS', (t) => {
     `
   }
   // We expect that..
-  t.deepEqual(recievedConfig, expectedConfig)
+  assert.deepEqual(recievedConfig, expectedConfig)
 })
