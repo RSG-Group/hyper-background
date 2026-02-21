@@ -10,6 +10,9 @@ exports.decorateConfig = config => {
     // If it is absolute, then set it to the value, else resolve it correctly.
     ? config.backgroundImage
     : path.resolve(os.homedir(), config.backgroundImage)
+  // Pull opacity from config, default to 1.0 if not set (backwards compatible).
+  // We invert it for the black overlay — higher opacity = more image visible = less black.
+  const overlay = config.backgroundOpacity !== undefined ? 1 - config.backgroundOpacity : 0
   // Assign the old config and our customizations to a new object and return it.
   return Object.assign(config, {
     // This makes the terminal transparent.
@@ -18,7 +21,9 @@ exports.decorateConfig = config => {
     css: `
       ${config.css || ''}
       .hyper_main {
-        background: url(file://${backgroundPath}) center;
+        background:
+          linear-gradient(rgba(0,0,0,${overlay}), rgba(0,0,0,${overlay})),
+          url(file://${backgroundPath}) center;
         background-size: cover;
       }
       .terms_terms {
